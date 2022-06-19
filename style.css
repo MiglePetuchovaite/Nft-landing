@@ -9,7 +9,7 @@ body {
     margin-bottom: 15px;
   }
   header img {
-    height: 1rem;
+    height: 28px;
   }
   nav img {
     display:block;
@@ -25,40 +25,40 @@ body {
     margin-right: 10px;
   }
   .icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .d-flex {
-    display: flex;
-  }
-
-  .container {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .hero {
-    display: flex;
+    width: 25px;
+    height: 25px;
   }
   main {
     overflow: hidden;
   }
+  .container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
   .hero {
-    margin-bottom: 50px;
+    display: flex;
+    margin-bottom: 70px;
+    padding-top: 80px;
   }
   .hero__content {
+    min-width: 210px;
     width: 70%;
   }
   .hero__image-wrap {
+    position: relative;
     width: 30%;
   }
-.hero__image-wrap img {
-    width: 200px;
+  .hero__image-wrap img {
+    position: absolute;
+    width: 425px;
+    left: -90px;
+    top: -90px;
+    z-index: 1;
   }
   .hero__subtitle {
     font-style: normal;
     font-weight: 700;
-    font-size: 9px;
+    font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.1em;
     color: #FF3998;
@@ -66,22 +66,22 @@ body {
   }
   h1 {
     color: #111111;
+    font-size: 42px;
     font-weight: 900;
+    line-height: 50px;
   }
   p {
-color: #555555;
-font-weight: 400;
-font-size: 12px;
-line-height: 150%;
+    color: #555555;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
   }
-
-
   .button {
     border-radius: 100rem;
-    font-size: 14px;
-    padding: 0.5rem 2rem;
-    border: solid 3px transparent;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #FF3939, #FF8139);
+    font-size: 20px;
+    padding: 1.5rem 3.5rem;
+    border: solid 4px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #FF3998, #FF3939, #FF8139, #CBB06A);
     background-origin: border-box;
     background-clip: content-box, border-box;
     box-shadow: 2px 1000px 1px #fff inset;
@@ -97,12 +97,154 @@ line-height: 150%;
     padding-bottom: 30px;
   }
   .announcement__content {
-    margin: 0px 15px;
+    margin: 0px 30px;
   }
   h3 {
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 500;
   }
   .announcement__content p {
     color: #111111;
   }
-
+  .companies {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+.companies__logo .hidden {
+    display: none;
+}
+.companies__logo {
+  margin-bottom: 15px;
+  width: 50%;
+}
+.companies img {
+  display: block;
+  max-height: 35px;
+  max-width: 90%;
+}
+.nft {
+  border-bottom: 2px solid #EEEEEE;
+  display: block;
+  padding-bottom: 90px;
+  padding-top: 1px;
+}
+.nft__text .link {
+  color: #555555;
+}
+.nft__image-wrap {
+display: flex;
+margin-right: -30px;
+overflow: scroll;
+}
+.nft__image-item {
+  margin-right: 35px;
+}
+.nft__image-item > img {
+  display: block;
+  height: 278px;
+  width: 290px;
+}
+.nft-image__description {
+  background: #EEEEEE;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 15px;
+}
+.nft-image__subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+.nft-image__subtitle p {
+  font-size: 12px;
+}
+.nft-image__gloop {
+  color: #FF8139;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 550;
+  margin: 0;
+}
+.nft-image__number {
+  display: flex;
+  justify-content: space-between;
+}
+.nft-image__name {
+  display: flex;
+  justify-content: space-between;
+}
+.information {
+  display: flex;
+  padding-top: 50px;
+}
+.information__content {
+  min-width: 210px;
+  width: 200px;
+}
+.information__image-wrap {
+  width: 30%;
+}
+.information__image-wrap img {
+  display: block;
+  margin-top: 150px;
+  width: 200px;
+}
+h2 {
+  color: #111111;
+  font-weight: 900;
+  font-size: 50px;
+}
+.border {
+  border-bottom: 2px solid #EEEEEE;
+  display: block;
+}
+.company_info {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.icons {
+  word-spacing: 15px;
+}
+.icons a {
+  color: #999999;
+}
+.company_info__policies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.company_info__policies p {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.company_info__policies ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.company_info__policies li {
+  margin-bottom: 10px;
+}
+.company_info__policies a {
+  color: #555555;
+  text-decoration: none;
+}
+  .company_info__block {
+    width: 50%;
+}
+  footer {
+    margin-bottom: 105px;
+}
+  footer p {
+    color: #999999;
+    line-height: 100%;
+}
+.footer__hidden {
+  display: none;
+}
+  
+  
