@@ -110,32 +110,31 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
-}
-.companies__logo .hidden {
+  }
+  .companies__logo .hidden {
     display: none;
-}
-.companies__logo {
+  }
+  .companies__logo {
   margin-bottom: 15px;
   width: 50%;
-}
-.companies img {
+  }
+  .companies img {
   display: block;
   max-height: 35px;
   max-width: 90%;
-}
-.nft {
-  border-bottom: 2px solid #EEEEEE;
+  }
+  .nft {
   display: block;
   padding-bottom: 90px;
   padding-top: 1px;
-}
+  }
 .nft__text .link {
   color: #555555;
-}
+  }
 .nft__image-wrap {
-display: flex;
-margin-right: -30px;
-overflow: scroll;
+  display: flex;
+  margin-right: -30px;
+  overflow: scroll;
 }
 .nft__image-item {
   margin-right: 35px;
@@ -245,6 +244,109 @@ h2 {
 }
 .footer__hidden {
   display: none;
+}
+@media only screen and (min-width:786px){
+  .container {
+    max-width: 1280px;
+    margin: auto;
+  }
+  nav img {
+    display: none;
+  }
+  nav .links {
+    display: block;
+  }
+  nav .signup {
+    color: #FF3998;
+  }
+  .hero {
+    margin-bottom: 150px;
+    padding-top: 100px;
+  }
+  h1 {
+    font-size: 96px;
+    line-height: 116px;
+  }
+  .hero__content {
+    width: 50%;
+  }
+  .hero__image-wrap {
+   width: 50%;
+  }
+  .hero__image-wrap img {
+    width: 800px;
+    left: -5px;
+    top: -90px;
+  }
+  .announcement {
+    background-size: cover;
+    max-width: 1280px;
+    margin: auto;
+    border-radius: 15px;
+    padding-top: 80px;
+    padding-bottom: 50px
+  }
+  .announcement__content {
+    margin: 0px 50px;
+  }
+  .companies {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .companies__logo {
+    margin-bottom: 50px;
+    width: auto;
+    }
+  .companies__logo .hidden {
+    display: block;
+  }
+  .nft {
+    padding-bottom: 120px;
+  }
+  .nft__image-wrap {
+    padding-top: 50px;
+    overflow: hidden;
+  }
+  .border {
+    max-width: 1280px;
+    margin: auto;
+  }
+  .information {
+    padding-top: 120px;
+  }
+  .information__content {
+    width: 40%;
+  }
+  .information__image-wrap {
+    width: 60%;
+  }
+  .information__image-wrap img {
+    margin-top: -30px;
+    margin-left: 350px;
+  }
+  .company_info {
+    display: flex;
+  }
+  .company_info__logo {
+    width: 50%;
+  }
+  .company_info__policies {
+    flex-wrap: nowrap;
+    padding-top: 0px;
+    width: 50%;
+  }
+  .company_info__policies :last-of-type {
+    width: auto;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__hidden {
+    display: flex;
+  }
+
+
 }
   
   
